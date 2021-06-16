@@ -29,7 +29,7 @@ class App extends React.Component {
         <h1 className={styles.title}>{pageContents.title}</h1>
         <h2 className={styles.subtitle}>{pageContents.subtitle}</h2>
         {this.state.lists.map(({key, ...listProps}) => (
-          <List key={key}{...{listProps}}/>
+          <List {...listProps} key={key}/>
         ))}
         <Creator text={settings.listCreatorText} action={title => this.addList(title)}/>
       </main>
