@@ -4,13 +4,16 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 //import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
-//import { settings } from '../../data/dataStore';
+import { settings } from '../../data/dataStore';
 
 class Column extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     cards: PropTypes.array,
     icon: PropTypes.string,
+  }
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
   }
   render(){
     const { title, icon, cards } = this.props;
