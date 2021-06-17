@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import ReactHtmlParser from 'react-html-parser';
+import { settings } from '../../data/dataStore';
 import styles from './List.scss';
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
-import PropTypes from 'prop-types';
-import { settings } from '../../data/dataStore';
-import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
 
 class List extends React.Component {
@@ -15,9 +15,11 @@ class List extends React.Component {
     image: PropTypes.string,
     addColumn: PropTypes.func,
   }
+
   static defaultProps = {
     description: ReactHtmlParser(settings.defaultListDescription),
   }
+  
   render() {
     const { title, image, description, columns, addColumn } = this.props;
     return (

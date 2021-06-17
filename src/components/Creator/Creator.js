@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
-import PropTypes from 'prop-types';
 
 class Creator extends React.Component {
   static propTypes = {
@@ -26,8 +26,9 @@ class Creator extends React.Component {
   }
 
   handleOK = () => {
+    const { action } = this.props;
     if(this.state.value != ''){
-      this.props.action(this.state.value);
+      action(this.state.value);
       this.setState({
         value: '',
         visibleButtons: false,
@@ -45,11 +46,12 @@ class Creator extends React.Component {
   }
 
   render() {
+    const { text } = this.props;
     return (
       <div className={styles.component}>
         <input
           type='text'
-          placeholder={this.props.text}
+          placeholder={text}
           value={this.state.value}
           onChange={this.handleChange}
         />
