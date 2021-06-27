@@ -79,6 +79,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to learn',
+    description: 'New things to read about and learn',
+    image: 'https://i.ibb.co/0nF1FXj/pexels-olia-danilevich-5088008.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to buy',
+    description: 'Shopping lists',
+    image: 'https://i.ibb.co/dWhHC3W/pexels-karolina-grabowska-4032980.jpg',
+  },
 ];
 
 const columns = [
