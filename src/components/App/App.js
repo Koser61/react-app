@@ -20,7 +20,7 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/info' component={Info} />
         <Route exact path='/list/:id' component={List} />
-        <Route path='/search/:id' component={SearchResultsContainer} />
+        <Route path='/search/:searchString' component={SearchResultsContainer} />
       </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>

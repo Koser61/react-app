@@ -1,6 +1,7 @@
 import shortid from 'shortid';
 
 // selectors
+export const getListTitleById = ({lists}, id) => lists.find(list => list.id == id).title;
 
 // action name creator
 const reducerName = 'lists';

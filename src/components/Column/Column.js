@@ -27,6 +27,7 @@ Column.propTypes = {
   icon: PropTypes.string,
   addCard: PropTypes.func,
   id: PropTypes.string,
+  listId: PropTypes.string,
 };
 
 Column.defaultProps = {

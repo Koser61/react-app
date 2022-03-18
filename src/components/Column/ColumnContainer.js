@@ -8,6 +8,7 @@ const mapStateToProps = (state, props) => ({
 
 const mapDispatchToProps = (dispatch, props) => ({
   addCard: title => dispatch(createActionAddCard({
+    listId: props.listId,
     columnId: props.id,
     title,
   })),
