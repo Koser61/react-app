@@ -1,6 +1,7 @@
 @import '../../styles/settings.scss';
 
 .component {
+  width: 100%;
   background: darken($color-dark, 3%);
   padding: calc($base-size * 1.5) 0;
 
@@ -27,5 +28,5 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: calc($base-size * 2.5);
 }

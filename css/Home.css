@@ -1,0 +1,43 @@
+.component {
+  margin: 12px;
+}
+
+.title {
+  margin-top: calc($base-size * 3);
+  margin-bottom: calc($base-size * 2);
+  text-align: center;
+  font-size: calc($base-size * 3);
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin-bottom: calc($base-size * 3);
+  text-align: center;
+  font-size: calc($base-size * 2);
+  font-style: italic;
+  font-weight: normal;
+}
+
+.columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: auto;
+}
+
+.creator {
+  width: 100%;
+  margin: 12px auto 0;
+}
+
+.creator input {
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+}

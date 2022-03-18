@@ -1,0 +1,27 @@
+.component {
+  background: #26de81;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  padding: 12px;
+  margin: 0 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.component:hover {
+  background: #1fcc74;
+}
+
+.component.danger {
+  background: #e1644e;
+}
+
+.component.danger:hover {
+  background: #dd5138;
+}

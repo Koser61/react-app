@@ -1,0 +1,15 @@
+.component {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  margin: 0 0 12px 0;
+  padding: calc($base-size * 1.5);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 calc($base-size / 4) 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 calc($base-size / 4) 0 rgba(0, 0, 0, 0.3);
+  color: #2f3542;
+}
+
+.component:last-child {
+  margin: 0 0 12px 0;
+}

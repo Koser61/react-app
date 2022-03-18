@@ -117,7 +117,7 @@ const columns = [
   {
     id: 'column-4',
     listId: 'list-2',
-    title: 'Strange column',
+    title: 'Strange',
     icon: 'question',
   },
 ];

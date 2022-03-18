@@ -1,0 +1,13 @@
+.component {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.component input {
+  background: #fff;
+  border: 1px solid #cacfd9;
+  padding: 12px calc($base-size * 1.5);
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+}

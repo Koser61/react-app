@@ -1,0 +1,38 @@
+.component {
+  width: 100%;
+  background: #292e39;
+  padding: calc($base-size * 1.5) 0;
+}
+
+.component a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  margin-right: 12px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.component a:hover {
+  color: #26de81;
+}
+
+.component a:global(.active) {
+  color: #e1644e;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: calc($base-size * 2.5);
+}
