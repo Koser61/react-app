@@ -8,14 +8,16 @@ import ReactHtmlParser from 'react-html-parser';
 const ListLink = ({id, title, image, description}) => (
   <Link to={`/list/${id}`} className={styles.link}>
     <section className={styles.component}>
-      <div className={styles.text}>
-        <h2 className={styles.title}>{ReactHtmlParser(title)}</h2>
-        <div className={styles.description}>
-          {ReactHtmlParser(description)}
+      <div className={styles.wrapper}>
+        <div className={styles.text}>
+          <h2 className={styles.title}>{ReactHtmlParser(title)}</h2>
+          <p className={styles.description}>
+            {ReactHtmlParser(description)}
+          </p>
         </div>
-      </div>
-      <div className={styles.image}>
-        <img src={image} />
+        <div className={styles.image}>
+          <img src={image} />
+        </div>
       </div>
     </section>
   </Link>
