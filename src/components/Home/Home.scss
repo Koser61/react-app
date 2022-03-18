@@ -1,11 +1,15 @@
 @import '../../styles/settings.scss';
 
 .component {
-  margin: $base-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  padding: calc($base-size * 4);
 }
 
 .title {
-  margin-top: calc($base-size * 3);
   margin-bottom: calc($base-size * 2);
   text-align: center;
   font-size: calc($base-size * 3);
@@ -13,7 +17,6 @@
 }
 
 .subtitle {
-  margin-bottom: calc($base-size * 3);
   text-align: center;
   font-size: calc($base-size * 2);
   font-style: italic;
@@ -33,5 +36,46 @@
 
   input {
     box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .text {
+    padding: calc($base-size * 3);
+  }
+
+  .title {
+    font-size: calc($base-size * 2.5);
+  }
+
+  .subtitle {
+    font-size: calc($base-size * 1.75);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text {
+    padding: calc($base-size * 2) $base-size;
+  }
+
+  .title {
+    font-size: calc($base-size * 2);
+  }
+
+  .subtitle {
+    font-size: calc($base-size * 1.75);
+  }
+}
+@media only screen and (max-width: 550px) {
+  .text {
+    padding: calc($base-size * 2) $base-size;
+  }
+
+  .title {
+    font-size: calc($base-size * 1.75);
+    margin-bottom: $base-size;
+  }
+
+  .subtitle {
+    font-size: calc($base-size * 1.25);
   }
 }

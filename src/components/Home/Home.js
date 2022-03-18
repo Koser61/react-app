@@ -9,8 +9,10 @@ import { settings } from '../../data/dataStore';
 const Home = ({ title, subtitle, lists, addList }) => (
   <Container>
     <div className={styles.component}>
-      <h1 className={styles.title}>{title}</h1>
-      <h2 className={styles.subtitle}>{subtitle}</h2>
+      <div className={styles.text}>
+        <h1 className={styles.title}>{title}</h1>
+        <h2 className={styles.subtitle}>{subtitle}</h2>
+      </div>
       <div className={styles.columns}>
         {lists.map((listData) => (
           <ListLink key={listData.id} {...listData} />
