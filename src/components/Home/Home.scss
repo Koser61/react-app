@@ -59,10 +59,11 @@
 
   .title {
     font-size: calc($base-size * 2);
+    margin-bottom: calc($base-size * 1.5);
   }
 
   .subtitle {
-    font-size: calc($base-size * 1.75);
+    font-size: calc($base-size * 1.5);
   }
 }
 @media only screen and (max-width: 550px) {
