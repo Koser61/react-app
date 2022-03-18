@@ -2,9 +2,9 @@
 
 .component {
   position: relative;
-  min-height: ($base-size * 15);
+  min-height: calc($base-size * 15);
   background: $color-dark;
-  margin: 0 0 ($base-size * 3) 0;
+  margin: 0 0 calc($base-size * 3) 0;
   overflow: hidden;
   border-radius: $radius;
 }
@@ -14,7 +14,7 @@
   z-index: 2;
   left: 50%;
   top: 50%;
-  font-size: ($base-size * 2.5);
+  font-size: calc($base-size * 2.5);
   text-transform: uppercase;
   color: $color-light;
   transform: translate(-50%,-50%);

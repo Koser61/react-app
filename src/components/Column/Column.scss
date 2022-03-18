@@ -5,9 +5,9 @@
   width: calc(33% - 12px);
   background: $color-light;
   margin: 0 $base-size $base-size 0;
-  padding: ($base-size * 1.5);
+  padding: calc($base-size * 1.5);
   border-radius: $radius;
-  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  box-shadow: 0 calc($base-size / 4) 0 rgba(0,0,0,0.3);
   color: $color-dark;
 
   &:last-child {
@@ -17,19 +17,19 @@
 
 .title {
   text-align: center;
-  font-size: ($base-size * 1.5);
-  margin: 0 0 ($base-size * 1.5) 0;
+  font-size: calc($base-size * 1.5);
+  margin: 0 0 calc($base-size * 1.5) 0;
 }
 
 .icon > * {
   padding-right: $base-size;
   color: $color-warning;
-  font-size: ($base-size * 2);
+  font-size: calc($base-size * 2);
   vertical-align: middle;
 }
 
 .cards {
-  padding: ($base-size / 2) 0;
+  padding: calc($base-size / 2) 0;
 }
 
 @media (max-width: 767px) {

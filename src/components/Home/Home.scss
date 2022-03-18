@@ -1,24 +1,21 @@
 @import '../../styles/settings.scss';
 
 .component {
-  padding: $base-size;
+  margin: $base-size;
 }
 
 .title {
-  padding: ($base-size * 3) 0;
+  margin-top: calc($base-size * 3);
+  margin-bottom: calc($base-size * 2);
   text-align: center;
-  font-size: ($base-size * 3);
+  font-size: calc($base-size * 3);
   text-transform: uppercase;
 }
 
 .subtitle {
-  padding: ($base-size * 2) 0;
+  margin-bottom: calc($base-size * 3);
   text-align: center;
-  font-size: ($base-size * 2);
+  font-size: calc($base-size * 2);
   font-style: italic;
   font-weight: normal;
-}
-
-.title + .subtitle {
-  margin-top: (- $base-size * 3);
 }
