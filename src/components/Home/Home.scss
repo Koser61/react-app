@@ -19,3 +19,19 @@
   font-style: italic;
   font-weight: normal;
 }
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.creator {
+  width: 100%;
+  margin: $base-size auto 0;
+
+  input {
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.3);
+  }
+}

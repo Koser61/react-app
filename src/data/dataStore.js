@@ -1,4 +1,5 @@
 export const settings = {
+  listCreatorText: 'Add new list',
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
   creator: {
@@ -11,6 +12,7 @@ export const settings = {
     icon: 'search',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
+  defaultListImage: 'https://i.ibb.co/PNcSwnx/pexels-ann-poan-5797912.jpg',
   defaultColumnIcon: 'list-alt',
 };
 

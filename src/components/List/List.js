@@ -27,14 +27,15 @@ const List = ({ title, image, description, columns, addColumn }) => (
 
 List.propTypes = {
   title: PropTypes.node.isRequired,
-  description: PropTypes.node,
+  description: PropTypes.node.isRequired,
   columns: PropTypes.array,
-  image: PropTypes.string,
+  image: PropTypes.string.isRequired,
   addColumn: PropTypes.func,
 };
 
 List.defaultProps = {
-  description: ReactHtmlParser(settings.defaultListDescription),
+  description: settings.defaultListDescription,
+  image: settings.defaultListImage,
 };
 
 export default List;

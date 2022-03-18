@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 import Home from './Home';
+import { createActionAddList } from '../../redux/listsRedux';
 
 const mapStateToProps = state => ({
   title: state.app.title,
@@ -7,4 +8,10 @@ const mapStateToProps = state => ({
   lists: state.lists,
 });
 
-export default connect(mapStateToProps)(Home);
+const mapDispatchToProps = (dispatch) => ({
+  addList: title => dispatch(createActionAddList({
+    title,
+  })),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
