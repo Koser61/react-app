@@ -1,12 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+
 import { settings } from '../../data/dataStore';
-import styles from './List.scss';
+
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
 import Creator from '../Creator/Creator';
 import Container from '../Container/Container';
+
+import styles from './List.scss';
 
 const List = ({ title, image, description, columns, addColumn }) => (
   <Container>

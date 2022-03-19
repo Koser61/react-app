@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './SearchResults.scss';
+
 import Container from '../Container/Container';
 import Card from '../Card/CardContainer';
+
+import styles from './SearchResults.scss';
 
 const SearchResults = ({ cards }) => (
   <Container>

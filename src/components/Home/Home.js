@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Home.scss';
+
+import { settings } from '../../data/dataStore';
+
 import ListLink from '../ListLink/ListLink';
 import Creator from '../Creator/Creator';
 import Container from '../Container/Container';
-import { settings } from '../../data/dataStore';
+
+import styles from './Home.scss';
 
 const Home = ({ title, subtitle, lists, addList }) => (
   <Container>

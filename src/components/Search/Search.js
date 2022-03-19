@@ -1,10 +1,13 @@
 import React from 'react';
-import styles from './Search.scss';
-import Button from '../Button/Button';
 import PropTypes from 'prop-types';
-import { settings } from '../../data/dataStore';
-import Icon from '../Icon/Icon';
 import {withRouter} from 'react-router';
+
+import { settings } from '../../data/dataStore';
+
+import Button from '../Button/Button';
+import Icon from '../Icon/Icon';
+
+import styles from './Search.scss';
 
 class Search extends React.Component {
   static propTypes = {
@@ -42,9 +45,9 @@ class Search extends React.Component {
   }
 
   render() {
-    const {text} = this.props;
-    const {value} = this.state;
-    const {icon} = settings.search;
+    const { text } = this.props;
+    const { value } = this.state;
+    const { icon } = settings.search;
     return (
       <div className={styles.component}>
         <input

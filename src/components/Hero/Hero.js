@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+
 import styles from './Hero.scss';
 
-const Hero = props => (
+const Hero = ({ titleText, imgSrc }) => (
   <header className={styles.component}>
-    <h2 className={styles.title}>{ReactHtmlParser(props.titleText)}</h2>
-    <img className={styles.image} src={props.imgSrc}/>
+    <h2 className={styles.title}>{ReactHtmlParser(titleText)}</h2>
+    <img className={styles.image} src={imgSrc}/>
   </header>
 );
 

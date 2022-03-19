@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import { settings } from '../../data/dataStore';
-import styles from './Column.scss';
+
 import Card from '../Card/Card';
 import Creator from '../Creator/Creator';
 import Icon from '../Icon/Icon';
+
+import styles from './Column.scss';
 
 const Column = ({ title, icon, cards, addCard }) => (
   <section className={styles.component}>

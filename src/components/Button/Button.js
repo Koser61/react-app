@@ -1,10 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+
 import styles from './Button.scss';
 
-const Button = ({variant, ...otherProps}) => {
+const Button = ({ variant, ...otherProps }) => {
   return (
-    <button {...otherProps} className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}/>
+    <button
+      className={
+        styles.component + variant.split(' ').map(name => 
+          ' ' + (styles[name] || name)).join('')
+      }
+      {...otherProps}
+    />
   );
 };
 
