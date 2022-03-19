@@ -69,6 +69,18 @@ export const listData = {
           key: 1,
           title: 'Skyrim',
         },
+        {
+          key: 2,
+          title: 'AC Valhalla',
+        },
+        {
+          key: 3,
+          title: 'Cyberpunk 2077',
+        },
+        {
+          key: 4,
+          title: 'Hitman 3',
+        },
       ],
     },
   ],
@@ -164,6 +176,27 @@ const cards = [
     listId: 'list-1',
     title: 'Skyrim',
     index: 1,
+  },
+  {
+    id: 'card-7',
+    columnId: 'column-3',
+    listId: 'list-1',
+    title: 'AC Valhalla',
+    index: 2,
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-3',
+    listId: 'list-1',
+    title: 'Cyberpunk 2077',
+    index: 3,
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-3',
+    listId: 'list-1',
+    title: 'Hitman 3',
+    index: 4,
   },
 ];
 
