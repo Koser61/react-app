@@ -1,6 +1,5 @@
 import React from 'react';
 import Home from '../Home/HomeContainer';
-import Info from '../Info/Info';
 import {BrowserRouter, Route} from 'react-router-dom';
 import MainLayout from '../MainLayout/MainLayout';
 import {AnimatedSwitch} from 'react-router-transition';
@@ -18,7 +17,6 @@ const App = () => (
         className={styles.switchWrapper}
       >
         <Route exact path='/' component={Home} />
-        <Route exact path='/info' component={Info} />
         <Route exact path='/list/:id' component={List} />
         <Route path='/search/:searchString' component={SearchResultsContainer} />
       </AnimatedSwitch>
