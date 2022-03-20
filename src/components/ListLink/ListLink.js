@@ -13,9 +13,9 @@ const ListLink = ({ id, title, image, description }) => (
       <div className={styles.wrapper}>
         <div className={styles.text}>
           <h2 className={styles.title}>{ReactHtmlParser(title)}</h2>
-          <p className={styles.description}>
+          <div className={styles.description}>
             {ReactHtmlParser(description)}
-          </p>
+          </div>
         </div>
         <div className={styles.image}>
           <img src={image} />
