@@ -41,7 +41,27 @@ export default function reducer(statePart = [], action = {}) {
           }
         });
       } else {
-        return statePart;
+        let sourceColumnCards = statePart.filter(card => card.columnId == src.columnId).sort((a, b) => a.index - b.index);
+
+        sourceColumnCards.splice(src.index, 1);
+        targetColumnCards.splice(dest.index, 0, targetCard);
+
+        return statePart.map(card => {
+          const targetColumnIndex = targetColumnCards.indexOf(card);
+          if(card == targetCard){
+            return {...card, index: targetColumnIndex, columnId: dest.columnId};
+          } else if(targetColumnIndex > -1 && card.index != targetColumnIndex){
+            return {...card, index: targetColumnIndex};
+          } else {
+            const sourceColumnIndex = sourceColumnCards.indexOf(card);
+
+            if(sourceColumnIndex > -1 && card.index != sourceColumnIndex){
+              return {...card, index: sourceColumnIndex};
+            } else {
+              return card;
+            }
+          }
+        });
       }
     }
     default:
