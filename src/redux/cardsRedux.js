@@ -19,8 +19,12 @@ export const createActionMoveCard = payload => ({ payload, type: MOVE_CARD });
 // reducer
 export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
-    case ADD_CARD:
-      return [...statePart, action.payload];
+    case ADD_CARD: {
+      const newCardIndex = statePart.filter(card => card.columnId == action.payload.columnId).length;
+      const newCard = { index: newCardIndex, ...action.payload };
+      
+      return [...statePart, newCard];
+    }
     case MOVE_CARD: {
       const {id, src, dest} = action.payload;
 
