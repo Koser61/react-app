@@ -1,6 +1,10 @@
 # React To-Do list
-> Simple to-do list app with lists, columns and cards.
-> Live demo [_here_](https://safe-fortress-35248.herokuapp.com/).
+Simple to-do list app with lists, columns and cards.
+This project was made as a part of Kodilla's frontend bootcamp.
+
+Live demo [_here_](https://safe-fortress-35248.herokuapp.com/).
+>*If page is loading - please wait, server is waking up (free Heroku hosting).*
+
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -8,12 +12,6 @@
 * [Features](#features)
 * [Setup](#setup)
 * [Local environment](#local-environment)
-
-
-## General Information
-- This project was made as a part of Kodilla's frontend bootcamp
-- It's a frontend react web app for creating to-do lists
-
 
 ## Technologies Used
 - HTML
